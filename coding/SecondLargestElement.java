@@ -13,7 +13,7 @@ public class SecondLargestElement {
                }
            }
         }
-        
+
         System.out.println(arr[arr.length-2]);
     }
 }
