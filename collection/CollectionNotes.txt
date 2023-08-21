@@ -1,0 +1,116 @@
+https://www.youtube.com/watch?v=GO67C7V-IbQ&t=2795s
+
+Hashmap
+
+- one null key, multiple null value
+- insertion order is not maintained
+- Linkedhashmap (insertion is mainted)
+
+
+1] Load factor and initial capacity in hashmap?
+https://www.geeksforgeeks.org/load-factor-in-hashmap-in-java-with-examples/
+
+2] Internal working 
+https://www.geeksforgeeks.org/internal-working-of-hashmap-java/
+
+3] Why is it necessary to override hashcode and equals in our custom object
+https://www.youtube.com/watch?v=wKN6G9vZ9tI
+https://www.geeksforgeeks.org/override-equalsobject-hashcode-method/
+Object class hashmap can equals method will be called, because we are creating with new keyword, the object will be stored in two different heap memory
+
+
+==========================================================================================================================================================================================================
+
+Hashmap vs Hashtable Vs ConcurrentHashMap  (https://www.youtube.com/watch?v=VnI-FQ6H7h0&t=4s)
+
+- By design, all the collection classes in java.util packgae are fail fast where as collection classes in java.util.concurrent are fail safe
+- fail fast throw, ConcurrentModificationException where as fail safe will never through this exception
+-         
+                   synchrized                     Locking             No of threads         Null       Iterator        When to use
+          
+1] Hashmap         Non                             No                 Multi                 1          fail fast       Single Thread
+2] HashTable       Sync                            locking(table)      1                    No         fail safe       Multi thread
+3] Concurrent      Sync(only write operation)      locking(segment)    multi                No         fail safe       Multi
+4] sync            Sync                            No                  1                    1          fail fast       multi  
+
+==========================================================================================================================================================================================================
+
+How to make hashmap synchronized
+Collections. synchronizedMap()
+==========================================================================================================================================================================================================
+
+List Vs Set
+
+List	                                 				Set
+1. The List is an indexed sequence.					1. The Set is an non-indexed sequence.
+2. List allows duplicate elements					2. Set doesn’t allow duplicate elements.
+3. Elements by their position can be accessed.				3. Position access to elements is not allowed.
+4. Multiple null elements can be stored.				4. Null element can store only once.
+5. List implementations are ArrayList, LinkedList, Vector, Stack	5. Set implementations are HashSet, LinkedHashSet.
+==========================================================================================================================================================================================================
+
+ArrayList Vs Linked list
+
+1) ArrayList internally uses a dynamic array to store the elements.                         	LinkedList internally uses a doubly linked list to store the elements.
+2) Manipulation with ArrayList is slow because it internally uses an array.                     Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list 
+   If any element is removed from the array, all the other elements are shifted in memory.
+3) ArrayList is better for storing and accessing data.                                          LinkedList is better for manipulating data.
+5) The memory location for the elements of an ArrayList is contiguous.	                        The location for the elements of a linked list is not contagious.
+6) Generally, when an ArrayList is initialized, a default capacity of 10                        There is no case of default capacity in a LinkedList. 
+   is assigned to the ArrayList.	  
+   
+========================================================================================================================================================================================================
+Collection vs Collections
+
+https://www.geeksforgeeks.org/collection-vs-collections-in-java-with-example/
+
+Collections.min,Collections.max,Collections.sort,Collection.synchronized,Collection.unmodifiable
+
+========================================================================================================================================================================================================
+
+Comparable Vs Comparator            
+                                                                
+1] Comparable provides a single sorting sequence. In other words, we can                          The Comparator provides multiple sorting sequences
+   sort the collection on the basis of a single element such as id, name, and price.
+
+2] Comparable affects the original class, i.e., the actual class is modified.                     Comparator doesn't affect the original class, i.e., the actual class is not modified.   
+
+3] Comparable provides compareTo() method to sort elements.	                                  Comparator provides compare() method to sort elements.
+
+4] Comparable is present in java.lang package.	                                                  A Comparator is present in the java.util package.
+
+5] We can sort the list elements of Comparable type by Collections.sort(List) method.	          We can sort the list elements of Comparator type by Collections.sort(List, Comparator) method.
+
+
+========================================================================================================================================================================================================
+
+What is iterator, listiterator
+===============================================
+java.util.concurrent === ConcurrentHashMap, CopyOnWriteArrayList, CopyOnWriteArraySet
+=====================================================================================
+
+What is the difference between failfast and failsafe
+- A iterator which will fail fast when we are doing any modification while iterating through the collection is fail fast like arraylist,hashmap,set
+- fail safe are copyonwritearraylist copyonwritearrayset , concurrenthashmap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
