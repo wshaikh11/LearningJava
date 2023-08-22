@@ -1,0 +1,17 @@
+https://www.geeksforgeeks.org/java-threads/
+
+1] how do you create a thread?
+2] life cycle of a thread?
+3] thread schedular https://www.youtube.com/watch?v=MQhDw0nbV7k
+4] how can we achieve sync in a thread
+5] join in thread (https://www.geeksforgeeks.org/joining-threads-in-java/)
+6] Difference sync and join
+7] communication between thread
+8] volatile in thread 
+9] What is daemon thread
+
+
+
+new,runnable,running,wait/blocked,terminate
+
+
