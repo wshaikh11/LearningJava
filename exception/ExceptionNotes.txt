@@ -1,0 +1,52 @@
+Need of exception handling?
+ - In the real world project, it is important to handle errors correctely and simultameously provide meaningful error message to the client
+ 
+ How can we make error response clear in spring?
+ - We are lucky enough that spring provide build in support for error handling
+ 
+ Annotation used for spring boot error handling
+ - @RestController
+ - @ControlAdvice - This annotation handles the exceptions globally, it allows you to use the same ExceptionHandler for multi-controller
+                  - This way we can define how to treat an exception in one place because this handler will be called whenever the exception is thrown from the class that are coverd in CA
+ - @ExceptionHandler
+ 
+ 
+ It is advisable to use proper message in exception becase client can see it, he does not have to do anything with null pointer exception and line of error in the code that occurs, we should displey proper message to the client
+ 
+ =========================================================================================================================================================================================================
+ https://www.javatpoint.com/finally-block-in-exception-handling
+ https://www.javatpoint.com/multiple-catch-block-in-java
+ 
+
+ most specific to general
+
+ https://www.geeksforgeeks.org/exceptions-in-java/ 
+ 
+ https://www.youtube.com/watch?v=uo0CLK3z9Rs
+  
+ 1] What is Exception
+ 2] How exception are handled in java
+ 3] What in unreachable catch block error
+ 4] what are checked and unchecked exception     
+ 5] What is finally in java
+ 6] does finally block get executed if either try catch block are returning the control            
+ 7] Can we throw an exception manually, yes how??
+ 8] What is rethrowing exception in java?
+ 9] Difference between final,finally and finalize
+ 10] difference between throw, throws and throwable
+ 11] Can we override a super class method which is throwing unchecked exception with checked exception in the sub class ---No
+ 12] Which class is the super class of all type of error and exception in java
+ 13] Do you know try catch with resource block? Why do we use them ? When they were introduced?
+ 14] Is it possible to throw exception inside a lambda expression body?  --- https://www.youtube.com/watch?v=CdsgPL_5yes
+ 15] What is the difference between exception and error?
+ 16] What do you mean by ClassCastException? 
+ 17] What is exception propagation in java?
+ 18] What are the methods provided by the throwable class in java
+ 19] explain stacktrace in java, why it is important in exception handling?
+ 20] What are the advantages of using exception handling in your program
+ 21] How to create user defined exception in java
+ 22] How to catch multiple exception using single catch
+ 23] What is the difference between ClassNotFoundException and NoClassDefFoundError
+ 24] How to handle null pointer exception in java
+ 25] what is stackoverflow error in java
+ 
