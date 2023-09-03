@@ -1,0 +1,18 @@
+Copy Object
+
+- reference copy: When we create an object like
+Student s1 = new Student();
+s1.rollNo = 25;
+
+Student s2 = s1;
+sout(s2.rollNo)
+
+here we are creating copy of the reference, new object is not created, s1 and s2 will point to the same object, change in s2 will reflect change in s1 as well
+
+=========================================================================================================================================================================================================
+Shallow copy
+
+Clonable by default implement shallow copy, if the object as only premetive datatype then two separate will be created, change in the first object will not reflect in the second
+and if the object has non-premative datatype then reference of that object will be copied
+
+in order to create deep copy , we need to have own implementation in the clone method
