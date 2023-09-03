@@ -1,0 +1,15 @@
+Design pattern 
+
+1] Singleton
+Only one instance of the class is created
+
+- we can break single pattern by using reflection , by accessing the private constructor
+
+- to prevent it we can throw exception in constructor
+- We can use enum , by default constructor of enum is private, we cannot public constructor for enum, and You cannot invoke an enum constructor yourself so reflection cannot be used here
+
+- We can break singleton by implementing seriaziable interface
+- but can prevent it by implementing read resolve
+-The readResolve method is called when ObjectInputStream has read an object from the stream and is preparing to return it to the caller
+
+- We can break singleton by cloning, to prevent it, can can through exception in the clone method
