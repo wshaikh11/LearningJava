@@ -13,3 +13,11 @@ Only one instance of the class is created
 -The readResolve method is called when ObjectInputStream has read an object from the stream and is preparing to return it to the caller
 
 - We can break singleton by cloning, to prevent it, can can through exception in the clone method
+
+
+ENUM
+- Every enum is internally implemented by using Class.
+- Every enum constant represents an object of type enum.
+- Enum type can be passed as an argument to switch statements.
+- Every enum constant is always implicitly public static final. Since it is static, we can access it by using the enum Name. Since it is final, we can’t create child enums.
+- We can declare the main() method inside the enum. Hence we can invoke the enum directly from the Command Prompt.
