@@ -1,4 +1,4 @@
-package org.git.design;
+package org.git.design.creational.singleton;
 
 public enum PreventBreakingSingletonByReflection {
     INSTANCE;

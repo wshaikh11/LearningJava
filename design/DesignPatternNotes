@@ -1,0 +1,47 @@
+Design pattern 
+
+1] Singleton
+Only one instance of the class is created
+
+- we can break single pattern by using reflection , by accessing the private constructor
+
+- to prevent it we can throw exception in constructor
+- We can use enum , by default constructor of enum is private, we cannot public constructor for enum, and You cannot invoke an enum constructor yourself so reflection cannot be used here
+
+- We can break singleton by implementing seriaziable interface
+- but can prevent it by implementing read resolve
+-The readResolve method is called when ObjectInputStream has read an object from the stream and is preparing to return it to the caller
+
+- We can break singleton by cloning, to prevent it, can can through exception in the clone method
+
+Example of single pattern is logger
+For example, if you create multiple instances of a logging system, you may end up with conflicting logs or multiple log files. The Singleton pattern helps to solve this problem by ensuring that only one instance of the object is created. Create a private static field to hold the single instance of the class.
+
+One might want to use a singleton due to database server constraints, for example, a server might limit the number of connections.
+
+My main conscious reason is that you know what connections can be managed/closed etc., just makes things a bit more organised when you don't have unnecessary, redundant connections.
+
+It could just as well be a singleton managing a pool of connection. The point of a singleton for database connections is that you don't want every consumer making it's own connection or set of connections.
+
+https://gist.github.com/jasoet/3843797
+
+=========================================================================================================================================================================================================
+Creational design pattern
+
+2] Factory DP
+- in this pattern we don't expose the logic of how the object is been created to the client
+- Steps
+- create the main class that call the factory class
+- factory class will return the required instance
+
+
+1. getInstance() method of java.util.Calendar, NumberFormat, and ResourceBundle uses factory method design pattern. 
+2. All the wrapper classes like Integer, Boolean etc, in Java uses this pattern to evaluate the values using valueOf() method. 
+3. java.nio.charset.Charset.forName(), java.sql.DriverManager#getConnection(), java.net.URL.openConnection(), java.lang.Class.newInstance(), java.lang.Class.forName() are some of their example where factory method design pattern has been used.
+
+3] Abstract FP
+
+=========================================================================================================================================================================================================
+Structural DP (https://www.geeksforgeeks.org/proxy-design-pattern/)
+
+- Proxy design pattern 

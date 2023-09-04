@@ -1,4 +1,4 @@
-package org.git.design;
+package org.git.design.creational.singleton;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
