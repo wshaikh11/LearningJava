@@ -1,0 +1,53 @@
+Design pattern interview questions
+Categories of DP are Creational DP, Structural DP, Behavioral DP  
+
+Currentely we will study Creational DP
+
+Q1] Why do we need design pattern
+- As DP are well documented solution to the predefined problem and understood by software architects, designers and developers then their application within a specific solution will likewise be well understood
+- For example i want my application to create only one object for eg i want to have one object of database and should be used by all along the application, then i should use singleton DP
+- Patterns give a software developer an array of tried and tested solution to common problems, thus reducing the technical risk to the project by not having to employ a new and untested design , thus saving time and effort during the implementation stage of the software development lifecycle
+- They are language netural and so be applied to any language that support object-orientation
+- By using well design and documentated solution, the final product will have amuch higher degree of comprehension also it is easier to maintain
+
+Q2] What are cretional DP
+- Creational DP is related to way of creating  objects.
+- This pattern is used to define and describe how objects are created  at class instantation time 
+- For eg i have a Enployee class, i can create the opject by
+
+Employee obj = new Employee();
+
+here we are creating the instance using the new keyword
+
+Creational DP is divided into 5 parts
+1] Factory Method
+2] Abstract Factory
+3] Builder
+4] Prototype
+5] Singleton
+
+Factory Desing Pattern
+- main class ---> Factory class --->    profession
+                                     Eng  Doc  teach 
+                                     
+- In factory DP we don't expose the creational logic to the client and refer the created object using a standard interface
+i.e how i am creating the object by using new keyword or by calling the @Autowired
+- The factory DP is also know as virtual constructor (because we don't know how the object is been created)
+
+Steps:
+1] create the main class which will call the factory class
+2] Factory class will return required class instance
+
+real time scenario will be i being a customer and go the shop to buy a toothpaste and i am not knowing how the toothpaste is created, which chemical is been used, i just buying it
+
+https://www.geeksforgeeks.org/factory-method-design-pattern-in-java/
+
+Advantage of factory design pattern
+- Decoupling : It separates the object creation logic from the client code that uses those object. This makes the code more flexiable and maintainable beacause changes to the creation process dose'nt
+               require modification in the client code.
+- Extensibility : It's easy to introduce new product types without changing the client code. You simply need to create a new Concrete Creator subclass and implement the factory method to produce the new product.
+- Testability, Code Resuablility, Encapsulation
+
+
+Disadvantage
+- Increased complexity
